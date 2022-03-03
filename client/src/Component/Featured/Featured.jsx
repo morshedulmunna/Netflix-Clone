@@ -2,9 +2,29 @@ import "./Featured.scss";
 import { GrPlayFill } from "react-icons/gr";
 import { GoInfo } from "react-icons/go";
 
-const Featured = () => {
+const Featured = ({ type }) => {
   return (
     <div className="featured">
+      {type && (
+        <div className="catagory">
+          <span>{type === "movie" ? "Movies" : "Series"}</span>
+          <select name="genre" id="genre">
+            <option>Genre</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="crime">Crime</option>
+            <option value="fantacy">Fantacy</option>
+            <option value="historical">Historical</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="thiriller">Thiriller</option>
+            <option value="western">Western</option>
+            <option value="drama">Drama</option>
+            <option value="documentary">Documentary</option>
+          </select>
+        </div>
+      )}
       <img
         src="https://i.ibb.co/h1dpc9w/pexels-photo-6899260.jpg"
         alt="HeaderImage"
