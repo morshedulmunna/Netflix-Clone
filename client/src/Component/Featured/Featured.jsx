@@ -3,11 +3,13 @@ import { GrPlayFill } from "react-icons/gr";
 import { GoInfo } from "react-icons/go";
 
 const Featured = ({ type }) => {
+  console.log(type);
+
   return (
     <div className="featured">
       {type && (
         <div className="catagory">
-          <span>{type === "movie" ? "Movies" : "Series"}</span>
+          <span>{type === "movies" ? "Movies" : "Series"}</span>
           <select name="genre" id="genre">
             <option>Genre</option>
             <option value="adventure">Adventure</option>

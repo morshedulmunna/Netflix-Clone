@@ -25,9 +25,14 @@
         height: 25px;
         margin-right: 40px;
       }
-      span {
-        margin-right: 20px;
-        cursor: pointer;
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        span {
+          margin-right: 20px;
+          cursor: pointer;
+        }
       }
     }
     .right {

@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { MdNotificationsActive } from "react-icons/md";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // When Scrolling===>>>
@@ -21,11 +22,21 @@ const Navbar = () => {
             src="https://i.ibb.co/VVQ7PfF/netflix-logo-png-2562.png"
             alt="Logo"
           />
-          <span>Home</span>
-          <span>Series</span>
-          <span>Movies</span>
-          <span>New And Popular</span>
-          <span>My List</span>
+          <Link to="/">
+            <span>Home</span>
+          </Link>
+          <Link to="/series">
+            <span>Series</span>
+          </Link>
+          <Link to="/movies">
+            <span>Movies</span>
+          </Link>
+          <Link to="/popular">
+            <span>New And Popular</span>
+          </Link>
+          <Link to="/mylist">
+            <span>My List</span>
+          </Link>
         </div>
         <div className="right">
           <FaSearch className="icon" />
